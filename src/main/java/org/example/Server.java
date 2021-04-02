@@ -13,7 +13,7 @@ public class Server
             System.out.println("Opening server");
             while (true)
             {
-                Socket socket = server.accept(); // łączenie
+                Socket socket = server.accept(); // connecting
 
                 System.out.println("New client: " + socket + ", opening new thread for him");
                 Thread service = new Service(socket);
